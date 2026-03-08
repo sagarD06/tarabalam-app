@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import ThemeProvider from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -94,6 +95,7 @@ export default function RootLayout({
           <main className="max-w-md mx-auto px-4 py-8">
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
